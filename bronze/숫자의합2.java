@@ -1,3 +1,5 @@
+package bronze;
+
 import java.util.Scanner;
 
 public class 숫자의합2 {
