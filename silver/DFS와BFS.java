@@ -59,7 +59,7 @@ public class DFS와BFS {
 
     }
 
-    static void DFS(int start){ // 시작점 노드 입력받음
+    private static void DFS(int start){ // 시작점 노드 입력받음
         if(DFSvisited[start]) return; // 이미 방문한 노드라면 return
 
         // 방문하지 않았다면
@@ -73,7 +73,7 @@ public class DFS와BFS {
         }
     }
 
-    static void BFS(int start){ // 시작점 노드 입력받음
+    private static void BFS(int start){ // 시작점 노드 입력받음
 
         queue.offer(start);
         BFSvisited[start] = true;
