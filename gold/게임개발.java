@@ -56,6 +56,7 @@ public class 게임개발 {
 
             for(int next : A[now]){ // 현재 노드의 인접리스트 순회
                 indegree[next]--; // 진입차수 1감소
+                // 가장 오래 걸리는 경로를 따라가야 하므로 max 사용
                 result[next] = Math.max(result[next], result[now] + time[next]);
 
                 if(indegree[next] == 0){
